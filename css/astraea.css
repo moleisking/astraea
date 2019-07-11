@@ -1,0 +1,37 @@
+#btnStar1, #btnStar2, #btnStar3, #btnStar4, #btnStar5 {    
+    background: none;    
+    margin: 2px;
+    padding: 0px;
+    display: inline-block;    
+}
+
+#divComment{
+    border: 1px solid black;
+    display: inline-block;
+    margin: 2px;
+    padding: 16px;
+    width:100%;
+}
+
+.btnStar {    
+    background: none;    
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;   
+}
+
+.btnStar:hover {
+    background: none;
+}
+
+.btnStar:before {
+    background: none ;
+}
+
+.btnStar:after {
+    background: none ;
+}
+
+.btnStar:focus {
+    background: none ;
+}

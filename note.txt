@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="./w3.css">
+<!-- Trigger/Open the Modal -->
+<button onclick="document.getElementById('id01').style.display='block'"
+class="w3-button" style="background: url(email_box.svg)"></button>
+
+<!-- The Modal -->
+<!--div id="id01" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id01').style.display='none'" 
+      class="w3-button w3-display-topright">&times;
+	  <textarea rows="4" width="80%" placeholder="message"></textarea>
+	<button type="button" style="background: url(email_send.svg)"></button>
+	  </span>     
+    </div>
+  </div>
+</div-->
+
+	<!--textarea rows="4" width="80%" placeholder="message"></textarea>
+	<button type="button" style="background: url(email_send.svg)"></button>
+ 	<button type="button" style="background: url(email_box.svg)"></button--> 
+
+   $para      = 'moleisking@gmail.com';
+$titulo    = 'El título';
+$mensaje   = 'Hola';
+$cabeceras = 'From: webmaster@example.com' . "\r\n" .
+    'Reply-To: webmaster@example.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+mail($para, $titulo, $mensaje, $cabeceras);
+
+
+1
+openssl genrsa -des3 -out server.key 1024
+
+openssl req -new -x509 -nodes -sha1 -days 365 -key server.key -out server.crt -config C:\wamp\bin\apache\apache2.4.35\conf\openssl.cnf
+
+https://perials.com/enable-virtual-hosts-self-signed-ssl-wamp/
+
+https://stackoverflow.com/questions/28858351/php-ssl-certificate-error-unable-to-get-local-issuer-certificate/32095378
+
+http://slproweb.com/products/Win32OpenSSL.html
